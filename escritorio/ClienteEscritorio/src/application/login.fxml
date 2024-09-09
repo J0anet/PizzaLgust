@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="600.0" prefWidth="800.0" styleClass="main-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <VBox fx:id="loginScreen" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" styleClass="vbox">
+         <children>
+            <Label styleClass="title-label" text="Login" textFill="#0078d4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="100.0" prefWidth="291.0">
+               <children>
+                  <Label layoutX="279.0" layoutY="13.0" styleClass="input-label" text="Email:" />
+                  <Label layoutX="229.0" layoutY="55.0" styleClass="input-label" text="Contrasenya:" />
+                  <TextField fx:id="usernameField" layoutX="327.0" layoutY="9.0" prefWidth="200.0" styleClass="text-field" />
+                  <PasswordField fx:id="passwordField" layoutX="327.0" layoutY="51.0" prefWidth="200.0" styleClass="text-field" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" styleClass="login-button" text="Login" />
+            <Button fx:id="toRegisterScreenButton" mnemonicParsing="false" onAction="#toRegisterScreen" text="Registrar un nou usuari" />
+            <ImageView fx:id="imagePizza" fitHeight="236.0" fitWidth="417.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/PizzaLgust.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="errorLabel" alignment="CENTER" prefHeight="25.0" prefWidth="618.0" textAlignment="CENTER" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox fx:id="userListScreen" prefHeight="600.0" prefWidth="800.0" styleClass="vbox" visible="false">
+         <children>
+            <ListView fx:id="userListView" onMouseClicked="#userClicked" prefHeight="515.0" prefWidth="756.0" />
+            <Button fx:id="exitUserList" mnemonicParsing="false" onAction="#handleExitUserList" text="Tornar enrere" />
+            <Button fx:id="deleteUserButton" mnemonicParsing="false" onAction="#deleteUser" text="Esborrar aquest usuari" visible="false" />
+         </children>
+      </VBox>
+      <VBox fx:id="sessionProfile" prefHeight="600.0" prefWidth="800.0" styleClass="vbox" visible="false">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="342.0" layoutY="43.0" styleClass="title-label" text="Benvingut" textFill="#0078d4" />
+                  <Label fx:id="userLabel" alignment="CENTER" layoutX="48.0" layoutY="68.0" prefHeight="25.0" prefWidth="661.0" text="Usuari" />
+                  <Button fx:id="logoutButton" layoutX="21.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                  <Label fx:id="isAdminText" alignment="CENTER" layoutX="21.0" layoutY="68.0" prefHeight="25.0" prefWidth="99.0" text="Usuari admin" textFill="RED" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="521.0" prefWidth="800.0">
+               <children>
+                  <Label layoutX="330.0" layoutY="14.0" styleClass="title-label" text="Perfil d'usuari" textFill="#0078d4" />
+                  <Label layoutX="266.0" layoutY="61.0" text="Nom" />
+                  <Label layoutX="241.0" layoutY="107.0" text="Cognom" />
+                  <TextField fx:id="nameField" editable="false" layoutX="319.0" layoutY="53.0" />
+                  <TextField fx:id="lastnameField" editable="false" layoutX="319.0" layoutY="99.0" />
+                  <Button fx:id="showUsers" layoutX="14.0" layoutY="371.0" mnemonicParsing="false" onAction="#userList" prefHeight="49.0" prefWidth="218.0" text="Mostrar tots els usuaris" />
+                  <Label fx:id="adminOptions" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="336.0" prefHeight="25.0" prefWidth="268.0" text="Opcions d'administració" textFill="RED" />
+                  <Button fx:id="modifyButton" layoutX="288.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="49.0" prefWidth="180.0" text="Modificar" />
+               </children></AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="registerUserScreen" prefHeight="600.0" prefWidth="800.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="610.0" prefWidth="800.0">
+               <children>
+                  <TextField fx:id="usernameNew" layoutX="302.0" layoutY="52.0" promptText="Nom d'usuari" />
+                  <TextField fx:id="emailNew" layoutX="302.0" layoutY="93.0" promptText="Email" />
+                  <TextField fx:id="nameNew" layoutX="302.0" layoutY="134.0" promptText="Nom" />
+                  <TextField fx:id="lastNameNew" layoutX="302.0" layoutY="175.0" promptText="Cognom" />
+                  <TextField fx:id="passwordNew" layoutX="302.0" layoutY="216.0" promptText="Contrasenya" />
+                  <Button fx:id="createUserButton" layoutX="334.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleCreateUser" text="Crear usuari" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

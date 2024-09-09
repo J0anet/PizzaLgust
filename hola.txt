@@ -1,0 +1,6 @@
+Varias cosas:
+
+- Se encripta y desencripta todo, MENOS EL TOKEN!!! El token no hay que encriptarlo, o no va a funcionar. 
+- Atención a los tipos: Solo se puede encrypt/decrypt strings. NO FUNCIONA CON FLOAT O BOOLS. Hay que convertir los tipos antes de hacerlo.
+- Los endpoints que devuelven listas siguen devolviendo listas de diccionarios, pero los valores están encriptados
+- Create-pizza va a necesitar una lista de ingredientes. NO ENCRIPTAR la lista directamente, encriptar cada valor uno por uno y guardarlo en una lsita.

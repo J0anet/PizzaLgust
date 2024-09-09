@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updateUserLayoutAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_user">
+
+
+    <TextView
+        android:id="@+id/TvIndexAdmin"
+        android:layout_width="409dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_UpdateIndexText"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UpdateTv_mensajeAdmin"
+        android:layout_width="413dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_MensajeUpdateAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvIndexAdmin" />
+
+    <TextView
+        android:id="@+id/UpdateTv_nameAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_UserName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_mensajeAdmin" />
+
+    <EditText
+        android:id="@+id/etUpdateUserNameAdmin"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/et_UserName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_nameAdmin" />
+
+    <TextView
+        android:id="@+id/UpdateTv_EmailAdmin"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/tv_email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_mensajeAdmin" />
+
+    <EditText
+        android:id="@+id/etUpdateEmailAdmin"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_email"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_EmailAdmin" />
+
+    <TextView
+        android:id="@+id/UpdateTv_FirstNameAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_FirtsName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateUserNameAdmin" />
+
+    <EditText
+        android:id="@+id/etUpdateLastNameAdmin"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_LastName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_LastNameAdmin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/UpdateTv_LastNameAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="148dp"
+        android:text="@string/tv_LastName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateEmailAdmin" />
+
+    <EditText
+        android:id="@+id/etUpdateNameAdmin"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_FirtsName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_FirstNameAdmin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/UpdateTv_UserIdAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_UserIdAdmin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateNameAdmin" />
+
+    <EditText
+        android:id="@+id/etUpdateUserIdAdmin"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_UserIdAdmin"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_UserIdAdmin"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSaveAdmin"
+        android:layout_width="74dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@android:color/holo_purple"
+        android:clickable="true"
+        android:src="@drawable/add_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

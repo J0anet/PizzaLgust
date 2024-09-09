@@ -1,0 +1,71 @@
+<resources>
+    <!-- PRINCIPAL -->
+    <string name="app_name">pizzaLgustMobile</string>
+    <string name="btn_entrar">ENTRAR</string>
+    <string name="tv_login">LOGIN</string>
+    <string name="et_contraseña">Ingrese la contraseña</string>
+    <string name="et_email">Ingrese el correo electronico</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_contraseña">Contraseña</string>
+    <string name="tv_Bienvenido">Bienvenidos a PizzaLgust!</string>
+    <string name="tv_Registration">Registrate aquí</string>
+
+    <!-- admin activity -->
+    <string name="tv_admin_name"></string>
+    <string name="btn_salir">LOGOUT</string>
+    <string name="tv_bienvenidaAdmin">Bienvenido Admin</string>
+    <string name="tv_Bienvenida">Bienvenido Sr.Wayne</string>
+    <string name="tv_admin">Administrador</string>
+    <string name="tv_deleteText_description">Eliminar usuario</string>
+    <string name="deleteUser_description">Eliminar usuario</string>
+
+
+    <!-- User activity -->
+
+    <string name="tv_bienvenida_user">Bienvenid@</string>
+    <string name="tv_user">Usuario</string>
+    <string name="et_delete">Borrar\nUsuario</string>
+    <string name="et_userslist">Lista\nUsuarios</string>
+
+    <!-- Update Admin activity -->
+    <string name="tv_UserName">User Name</string>
+    <string name="tv_FirtsName">Nombre</string>
+    <string name="tv_LastName">Apellido</string>
+    <string name="tv_Password">Password</string>
+    <string name="et_UserName">Nombre usuario</string>
+    <string name="tv_Crear">Creación de usuarios</string>
+    <string name="tv_Mensaje">Rellena los campos para crear un usuario nuevo.</string>
+    <string name="tv_UserIdAdmin">UserId</string>
+    <string name="tv_MensajeUpdateAdmin">Rellena los campos para Actualizar el usuario nuevo.\n Obligatorio ID</string>
+
+
+    <!-- User activity -->
+    <string name="tv_UpdateIndexText">Actualización de usuario</string>
+    <string name="tv_MensajeUpdate">Rellena los campos para Actualizar el usuario nuevo.</string>
+
+
+    <!-- Item User -->
+    <string name="tv_UserIdRV">User ID</string>
+    <string name="tv_EmailRV">Email</string>
+    <string name="tv_FirstNameRV">Nombre</string>
+    <string name="tv_LastNameRV">Apellido</string>
+    <string name="tv_UserNameRV">User Name</string>
+    <string name="tv_UserTypeRV">Tipo de Usuario</string>
+    <string name="tv_isAdminRV">Eres Admin?</string>
+    <string name="tv_mensajeElimin">Escribe user_id para eliminar usuario.</string>
+    <string name="tv_mensajeUpdateAdmin">Pon el user ID para actualizar datos usuario.</string>
+    <string name="tv_UpdateText_description">Actualizar usuario</string>
+    <string name="USER_ID">USER ID</string>
+
+    <!-- PIZZAS -->
+    <string name="tv_User_CreatePizzas">Menú\n pizzas</string>
+    <string name="tv_User_pizzaText">PIZZAS</string>
+    <string name="tv_User_creacionpizza">CREAR\nPIZZAS</string>
+    <string name="tv_User_mensajeCreacion">Rellena los campos para crear una pizza nuevo.</string>
+    <string name="tv_PizzaName">Pizza Name</string>
+    <string name="et_PizzaName">Nombre Pizza</string>
+    <string name="tv_Token">Token</string>
+    <string name="tv_PricePizza">Precio</string>
+    <string name="tv_DescriptionPizza">Descripción de la pizza</string>
+
+</resources>

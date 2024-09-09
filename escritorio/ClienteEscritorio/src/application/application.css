@@ -1,0 +1,56 @@
+/* Estilos para el contenedor principal */
+.root {
+    -fx-background-color: #f0f0f0; /* Color de fondo */
+}
+
+/* Estilos para el contenedor del formulario */
+.vbox {
+    -fx-background-color: #ffffff; /* Color de fondo */
+    -fx-padding: 20px; /* Relleno interno */
+    -fx-spacing: 10px; /* Espacio entre hijos */
+    -fx-border-color: #cccccc; /* Color del borde */
+    -fx-border-width: 2px; /* Ancho del borde */
+    -fx-border-radius: 10px; /* Radio del borde */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Sombra */
+}
+
+/* Estilos para las etiquetas */
+.label {
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+}
+
+/* Estilos para los campos de texto */
+.text-field {
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+    -fx-padding: 8px; /* Relleno interno */
+}
+
+/* Estilos para los botones */
+.button {
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+    -fx-padding: 12px 24px; /* Relleno interno */
+    -fx-background-color: #0078d4; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+    -fx-border-radius: 5px; /* Radio del borde */
+}
+
+.button:hover {
+    -fx-background-color: #005ea2; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para la etiqueta de mensaje */
+.message-label {
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-text-fill: red; /* Color del texto */
+}
+
+/* Estilos para el contenedor principal */
+.anchor-pane {
+    -fx-min-width: 800px; /* Ancho mínimo */
+    -fx-min-height: 600px; /* Altura mínima */
+    -fx-max-width: 800px; /* Ancho máximo */
+    -fx-max-height: 600px; /* Altura máxima */
+    -fx-background-color: #f0f0f0; /* Color de fondo */
+    -fx-padding: 20px; /* Relleno interno */
+    -fx-alignment: CENTER; /* Alineación */
+}

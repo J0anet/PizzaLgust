@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updateUserLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_user">
+
+
+    <TextView
+        android:id="@+id/TvIndex"
+        android:layout_width="409dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_UpdateIndexText"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UpdateTv_mensaje"
+        android:layout_width="413dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_MensajeUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvIndex" />
+
+    <TextView
+        android:id="@+id/UpdateTv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_UserName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_mensaje" />
+
+    <EditText
+        android:id="@+id/etUpdateUserName"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/et_UserName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_name" />
+
+    <TextView
+        android:id="@+id/UpdateTv_Email"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/tv_email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_mensaje" />
+
+    <EditText
+        android:id="@+id/etUpdateEmail"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_email"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_Email" />
+
+    <TextView
+        android:id="@+id/UpdateTv_FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_FirtsName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateUserName" />
+
+    <EditText
+        android:id="@+id/etUpdateLastName"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_LastName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_LastName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/UpdateTv_LastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="148dp"
+        android:text="@string/tv_LastName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateEmail" />
+
+    <EditText
+        android:id="@+id/etUpdateName"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="@string/tv_FirtsName"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTv_FirstName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSave"
+        android:layout_width="74dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@android:color/holo_purple"
+        android:clickable="true"
+        android:src="@drawable/add_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

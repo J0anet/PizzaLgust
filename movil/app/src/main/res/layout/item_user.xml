@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="411dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_UserIDRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_UserIdRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_EmailRV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_EmailRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_EmailRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_FirstNameRV"
+            app:layout_constraintStart_toStartOf="@+id/tv_UserIDRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_UserIDRV" />
+
+        <TextView
+            android:id="@+id/tv_FirstNameRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_FirstNameRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_LastNameRV"
+            app:layout_constraintStart_toStartOf="@+id/tv_EmailRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_EmailRV" />
+
+        <TextView
+            android:id="@+id/tv_LastNameRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_LastNameRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_UserNameRV"
+            app:layout_constraintStart_toStartOf="@+id/tv_FirstNameRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_FirstNameRV" />
+
+        <TextView
+            android:id="@+id/tv_UserNameRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_UserNameRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_UserTypeRV"
+            app:layout_constraintStart_toStartOf="@+id/tv_LastNameRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_LastNameRV" />
+
+        <TextView
+            android:id="@+id/tv_UserTypeRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_UserTypeRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_IsAdminRv"
+            app:layout_constraintStart_toStartOf="@+id/tv_UserNameRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_UserNameRV" />
+
+        <TextView
+            android:id="@+id/tv_IsAdminRv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_isAdminRV"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_UserTypeRV"
+            app:layout_constraintTop_toBottomOf="@+id/tv_UserTypeRV" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
